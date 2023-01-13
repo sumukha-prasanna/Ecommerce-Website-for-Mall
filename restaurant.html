@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Restaurant-Arcturus mall</title>
+    <link rel="stylesheet" href="rstyle1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/1e241e8528.js" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;483;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/arcturus_icon.jpg" alt="Arcturus mall logo" width="120px">
+                </div>
+                <nav>
+                    <ul id="menuitems">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="restaurant.html">Restaurent</a></li>
+                        <li><a href="movie_playing.html">Movies</a></li>
+                        <li><a href="clothing_index.html">Clothings</a></li>
+                        <!-- <li><a href="">Accessories</a></li> -->
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <img src="images/cart.png" width="30px" height="30px">
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+        </div>
+    <!-- </div> -->
+
+    
+    
+    <section class="home" id="home">
+        <div class="content">
+            <h3> food made with love</h3>
+            <p>Tasty and delicious restaurant items</p>
+        </div>
+        <div class="image">
+            <img src="images/home-img.png">
+        </div>
+    </section>
+
+    <section class="speciality" id= "speciality">
+        <h1 class="heading">
+            Our <span>Speciality</span>
+        </h1>
+        <div class="box-container">
+            <div class="box">
+                <img class="image" src="images/s-img-1.jpg" alt="">
+                <div class="content">
+                    <img src="images/s-1.png" alt="">
+                    <h3>Burger</h3>
+                    <p>Level 3 - Burger  King</p>
+                </div>
+            </div>
+ 
+            <div class="box">
+                <img class="image" src="images/s-img-2.jpg" alt="">
+                <div class="content">
+                    <img src="images/s-2.png" alt="">
+                    <h3>Pizza</h3>
+                    <p>Level 3 - Dominos</p>
+                </div>
+            </div>
+  
+            <div class="box">
+                <img class="image" src="images/s-img-3.jpg" alt="">
+                <div class="content">
+                    <img src="images/s-3.png" alt="">
+                    <h3>Ice-Cream</h3>
+                    <p>Level 3 - Polar Bear</p>
+                </div>
+            </div>
+  
+            <div class="box">
+                <img class="image" src="images/s-img-4.jpg" alt="">
+                <div class="content">
+                    <img src="images/s-4.png" alt="">
+                    <h3>Beverages</h3>
+                    <p>Level 3 - Brewers Drinks</p>
+                </div>
+            </div>
+  
+            <div class="box">
+                <img class="image" src="images/s-img-5.jpg" alt="">
+                <div class="content">
+                    <img src="images/s-5.png" alt="">
+                    <h3>Sweets</h3>
+                    <p>Level 3 - Waffle Sweets</p>
+                </div>
+            </div>
+  
+            <div class="box">
+                <img class="image" src="images/s-img-6.jpg" alt="">
+                <div class="content">
+                    <img src="images/s-6.png" alt="">
+                    <h3>Creamy Snacks</h3>
+                    <p>Level 3 - Cream Fillers</p>
+                </div>
+            </div>
+  
+
+        </div>
+    </section>
+
+    <section class="popular">
+        <h1 class="heading">
+            More To <span>Feast</span> On!
+        </h1>
+        <div class="box-container">
+
+            <div class="box">
+                <span class="price"> ₹50 - ₹200 </span>
+                <img src="images/p-1.jpg" alt="">
+                <h3>Burger</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <a href="#" class="btn">Visit Mall</a>
+            </div>
+            <div class="box">
+                <span class="price"> ₹50 - ₹200 </span>
+                <img src="images/p-2.jpg" alt="">
+                <h3>Cakes</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <a href="#" class="btn">Visit Mall</a>
+            </div>
+            <div class="box">
+                <span class="price"> ₹100 - ₹250 </span>
+                <img src="images/p-3.jpg" alt="">
+                <h3>Sweets</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <a href="#" class="btn">Visit Mall</a>
+            </div>
+            <div class="box">
+                <span class="price"> ₹25- ₹200 </span>
+                <img src="images/p-4.jpg" alt="">
+                <h3>Cupcakes</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <a href="#" class="btn">Visit Mall</a>
+            </div>
+    </section>
+
+    <div class="step-container">
+
+        <h1 class="heading">Fast <span>serving </span>In No Time</h1>
+    
+        <section class="steps">
+    
+            <div class="box">
+                <img src="images/step-1.jpg" alt="">
+                <h3>choose your favorite food</h3>
+            </div>
+            
+            <div class="box">
+                <img src="images/step-3.jpg" alt="">
+                <h3>easy payments methods</h3>
+            </div>
+            <div class="box">
+                <img src="images/step-4.jpg" alt="">
+                <h3>and finally, enjoy your food</h3>
+            </div>
+        
+        </section>
+    
+    </div>
+    <div class="gallery">
+        <div>
+            <h1 class="heading">Gallery</h1>
+        </div>
+        
+        <div class="slideshow-container">
+            
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 12</div>
+                <img src="images/gallery-1.jpg" style="width:100%">
+                <!-- <div class="text">Caption Text</div> -->
+            </div>
+            
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 12</div>
+                <img src="images/gallery-2.jpg" style="width:100%">
+                <!-- <div class="text">Caption Two</div> -->
+            </div>
+            
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 12</div>
+                <img src="images/gallery-3.jpg" style="width:100%">
+                <!-- <div class="text">Caption Three</div> -->
+            </div>
+            
+            <div class="mySlides fade">
+            <div class="numbertext">4 / 12</div>
+            <img src="images/gallery-4.jpg" style="width:100%">
+            <!-- <div class="text">Caption Three</div> -->
+        </div>
+        
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 12</div>
+            <img src="images/gallery-5.jpg" style="width:100%">
+            <!-- <div class="text">Caption Three</div> -->
+        </div>
+        
+            <div class="mySlides fade">
+                <div class="numbertext">6 / 12</div>
+            <img src="images/gallery-6.jpg" style="width:100%">
+            <!-- <div class="text">Caption Three</div> -->
+        </div>
+        
+        <div class="mySlides fade">
+            <div class="numbertext">7 / 12</div>
+            <img src="images/gallery-7.jpg" style="width:100%">
+            <!-- <div class="text">Caption Three</div> -->
+        </div>
+        
+        <div class="mySlides fade">
+            <div class="numbertext">8 / 12</div>
+            <img src="images/gallery-8.jpg" style="width:100%">
+            <!-- <div class="text">Caption Three</div> -->
+        </div>
+        
+        <div class="mySlides fade">
+            <div class="numbertext">9 / 12</div>
+            <img src="images/gallery-9.jpg" style="width:100%">
+            <!-- <div class="text">Caption Three</div> -->
+        </div>
+        
+        <div class="mySlides fade">
+            <div class="numbertext">10 / 12</div>
+            <img src="images/gallery-10.jpg" style="width:100%">
+            <!-- <div class="text">Caption Three</div> -->
+        </div>
+        
+        <div class="mySlides fade">
+            <div class="numbertext">11 / 12</div>
+            <img src="images/gallery-11.jpg" style="width:100%">
+            <!-- <div class="text">Caption Three</div> -->
+        </div>
+        
+        <div class="mySlides fade">
+            <div class="numbertext">12 / 12</div>
+            <img src="images/gallery-12.jpg" style="width:100%">
+            <!-- <div class="text">Caption Three</div> -->
+        </div>
+        
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+            <span class="dot" onclick="currentSlide(8)"></span>
+            <span class="dot" onclick="currentSlide(9)"></span>
+            <span class="dot" onclick="currentSlide(10)"></span>
+            <span class="dot" onclick="currentSlide(11)"></span>
+            <span class="dot" onclick="currentSlide(12)"></span>
+        </div>
+    </div>
+
+    <!-- BOOKING SECTION -->
+    <section class="booking" >
+        <h1 class ="heading"><span>Book Your Table</span></h1>
+        <div class="row">
+
+            <div class="image">
+                <img src="images/boooking-img.jpg">
+            </div>
+            
+            <form>
+                
+                <div class="inputbox">
+                    <input id="name" type="text" placeholder="Name">
+                    <input id="email" type="Email" placeholder="Email" >
+                </div>
+                
+                <div class="inputbox">
+                    <input id="number" type="tel" placeholder="Number">
+                    <input id="rest" type="text" placeholder="Enter Restaurant">
+                    
+                </div>
+                
+                <input type="submit" value="Book Table" class="btn" onclick="submit_button()">
+            </form>
+            
+        </div>
+
+    </section>
+
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col1">
+                    <img class="arcturus_logo1" src="images/logo.png" >
+                </div>
+                
+                <div class="footer-col2">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col3">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Twitter</li>
+                        <li>You Tube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2021-srujan</p>
+        </div>
+    </div>
+</div>
+    <script>
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        }
+
+        // 
+        var menuitems = document.getElementById("menuitems");
+
+        menuitems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(menuitems.style.maxHeight == "0px")
+            {
+                menuitems.style.maxHeight = "200px"
+            }
+            else
+            {
+                menuitems.style.maxHeight = "0px";
+            }
+        }
+
+        function submit_button(){
+            var x1=document.getElementById("name");
+            x1=x1.value;
+            var x2=document.getElementById("rest");
+            x2=x2.value;
+            var x3=document.getElementById("email");
+            x3=x3.value;
+            var x4=document.getElementById("number");
+            x4=x4.value;
+            if(x1&&x2&&x3&&x4)alert("Your table has been booked.");
+            else
+            alert("Please enter valid details");}
+        
+
+
+    </script>
+
+
+</body>
+</html>
+
+
+

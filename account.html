@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Account-Arcturus mall</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/1e241e8528.js" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;483;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body class="body">
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/arcturus_icon.jpg" alt="Arcturus mall logo" width="120px">
+                </div>
+                <nav>
+                    <ul id="menuitems">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="restaurant.html">Restaurant</a></li>
+                        <li><a href="movie_playing.html">Movies</a></li>
+                        <li><a href="clothing_index.html">Clothings</a></li>
+                        <!-- <li><a href="">Accessories</a></li> -->
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <img src="images/cart.png" width="30px" height="30px">
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+
+
+
+            <!-- ACCOUNT -->
+            <div class="account-page">
+                <div class="container">
+                    <div class="row">
+                        <div class="col2">
+                            <img src="images/starting_image1.png" width="100%">
+                        </div>
+                        <br><br><br>
+                        <div class="col2">
+                            <div class="form-conatiner">
+                                <div class="form-btn">
+                                    <span onclick="login()">Login</span>
+                                    <span onclick="register()">Register</span>
+                                    
+                                </div>
+
+                                <form id="loginform" method="" action="home.html">
+                                    <input type="text" placeholder="Username" value="PES2UG20CS351" required>
+                                    <input type="password" placeholder="Password" value="PES2UG20CS351" required>
+                                    <button type="submit" class="btn">Login</button>
+                                    <!-- <a href="" >Forgot password</a> -->
+                                </form>
+                                
+                                <form id="regform" method="post" action="/sign_up" >
+                                    <input type="text" placeholder="Username">
+                                    <input type="email" placeholder="Email">
+                                    <input type="password" placeholder="Password">
+                                    <button type="submit" class="btn">Register</button>
+                                    <!-- <a href="" Forgot password></a> -->
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+           
+            <div class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-col1">
+                            <img class="arcturus_logo1" src="images/logo.png" >
+                            <p>Our purpose is to sustainably make the pleasure and benifits of sports accessible to the many.</p>
+                        </div>
+                        
+                        <div class="footer-col2">
+                            <h3>Useful Links</h3>
+                            <ul>
+                                <li>Coupons</li>
+                                <li>Blog Post</li>
+                                <li>Return Policy</li>
+                                <li>Join Affiliate</li>
+                            </ul>
+                        </div>
+                        <div class="footer-col3">
+                            <h3>Follow us</h3>
+                            <ul>
+                                <li>Facebook</li>
+                                <li>Instagram</li>
+                                <li>Twitter</li>
+                                <li>You Tube</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+                    <p class="copyright">Copyright 2021-srujan</p>
+                </div>
+            </div>
+
+           
+        
+        <script>
+            var menuitems = document.getElementById("menuitems");
+    
+            menuitems.style.maxHeight = "0px";
+    
+            function menutoggle(){
+                if(menuitems.style.maxHeight == "0px")
+                {
+                    menuitems.style.maxHeight = "200px"
+                }
+                else
+                {
+                    menuitems.style.maxHeight = "0px";
+                }
+            }
+
+            var loginform = document.getElementById("loginform");
+            var regform = document.getElementById("regform");
+
+            function register(){
+                regform.style.transform = "translateX(0px)";
+                loginform.style.transform = "translateX(0px)";
+            }
+            function login(){
+                regform.style.transform = "translateX(300px)";
+                loginform.style.transform = "translateX(300px)";
+            }
+        </script>
+</body>
+</html>

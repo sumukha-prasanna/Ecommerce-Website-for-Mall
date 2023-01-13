@@ -1,0 +1,652 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: b   order-box;
+    
+}
+/* body { min-height: 75vh; } */
+body{
+    font-family: 'Scheherazade New', serif;
+    font-family: 'Satisfy', cursive;
+    /* font-style: ; */
+    /* background-color: black; */
+    /* font-family: 'Dancing Script', cursive; */
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: #555;
+}
+p{
+    color: gray;
+}
+
+/* .container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+} */
+
+.row{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.col2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.col2 img{
+    max-width: 100%;
+    padding: 50px 0;
+}
+
+.col2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+
+.btn{
+    display: inline-block;
+    background: lavender;
+    color: lightcoral;
+    border-radius: 30px;
+    padding: 8px 30px;
+    margin: 30px 0;
+    transition: background 0.5;
+
+}
+.btn:hover{
+    background: #563434;
+}
+
+.header{
+    background: radial-gradient(#fff,#e7a7a7);
+}
+.header .row{
+    margin-top: 30px;
+}
+
+.categories{
+    margin: 70px 0;
+}
+.col3{
+    flex: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.col3 img{
+    width: 100%;
+    cursor: pointer;
+    border: 2px;
+    border-radius: 30px;
+}
+#dine{
+    padding: 0.8em;
+}
+#movies{
+    padding: 0.8em;
+}
+#cothings{
+    padding: 0.8em;
+}
+
+.col3:hover{
+    /* transform: translate(-5px); */
+    transform: translate(-10px);
+    /* transform: translate(-10px); */
+}
+
+.small-container{
+    max-width: 1080px;
+    margin:auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    align-self: center;
+    align-content: center;
+    align-items: center;
+}
+.col4{
+    /* align-self: center;
+    align-content: center;
+    align-items: center; */
+    flex-basis: 20%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+    
+}
+
+.col4 img{
+    width: 300%;
+    cursor: pointer;
+    /* align-self: center; */
+}
+.title{
+    color: blue;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    /* text-align: center; */
+    
+}
+
+.title::after{
+    content: '';
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    transform: translate(-50%);
+}
+
+.col4 p{
+    font-size: 14px;
+}
+.col4:hover{
+    transform: translate(-5px);
+}
+
+.offer{
+    background: radial-gradient(#fff,#ffd6d6);
+    margin-top: 80px;
+    padding: 30px 0;
+}
+
+.col2 .offer-img{
+    padding: 50px;
+}
+small{
+    color: #555;;
+}
+
+.testimonial{
+    padding: 30px;
+}
+.fa.fa-quote-left{
+    font-size: 24px;
+    color: #ff523b;
+}
+.fa.fa-quote-right{
+    font-size: 24px;
+    color: #ff523b;
+}
+.col5 p{
+    font-size: 15px;
+    margin: 12px 0;
+    color: #777;
+}
+/* brands */
+
+.brands{
+    margin: 100px auto;
+}
+.col5{
+    width: 160px;
+
+}
+.col5 img{
+    width: 100%;
+    cursor: pointer;
+    /* filter: grayscale(100%); */
+}
+
+/* @media only screen and (max-width: 768px){
+#logo_slider
+{
+    margin: 0 0 20px;
+}
+} */
+/* #logo_slider
+{
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+    user-select: none;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+} */
+.col5 img:hover{
+    filter: saturate(100%);
+}
+col{
+    margin: 100px auto;
+    padding: 20px 10px;
+    text-align: center;
+}
+.arcturus_logo1{
+    align-items: center;
+    padding-left: 25%;
+}
+.footer{
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+
+.footer p{
+    color: #8a8a8a;
+}
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+}
+.footer-col1, .footer-col2, .footer-col3{
+    min-width: 250px;
+    margin-bottom: 20px;
+
+}
+.footer-col1{
+    flex-basis: 30%;
+}
+.footer-col2{
+    flex: 1;
+    text-align: center;
+}
+.footer-col2, .footer-col3{
+    flex-basis: 12%;
+    text-align: center;
+}
+ul{
+    list-style-type:none ;
+}
+.footer hr{
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+.copyright{
+    text-align: center;
+}
+
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+
+}
+
+/* media query for menu */
+@media only screen and (max-width: 800px){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #fff;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height  0.5s;
+
+    }
+    nav ul li{
+        display:block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: black;
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+}
+/* media query for menu for less than 600 px*/
+@media only screen and (max-width: 600px){
+    .row{
+        text-align: center;
+
+    }
+    .col2, .col3, .col4{
+        flex-basis: 100%;
+    }
+}
+
+/* restaurant */
+/*  */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+section{
+  padding: 2rem 9%;
+}
+.home{
+  display: flex;
+  flex-wrap: wrap;
+  gap:1.5rem;
+  min-height: 100vh;
+  align-items: center;
+  background:url(../images/home-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.home .content{
+  flex:1 1 40rem;
+  padding-top: 6.5rem;
+}
+
+.home .image{
+  flex:1 1 40rem;
+}
+
+.home .image img{
+  width:100%;
+  padding:1rem;
+  animation:float 3s linear infinite;
+}
+.home .content h3{
+  font-size: 5rem;
+  /* color: #333; */
+}
+
+.heading{
+    text-align: center;
+    font-size: 3.5rem;
+    padding: 1rem;
+    color: #666;
+}
+.heading span{
+    color: red;
+}
+.speciality .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+
+}
+.speciality .box-container .box{
+    flex:1 1 30rem;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    border:.1rem solid rgba(0,0,0,.3);
+    cursor: pointer;
+    border-radius: .5rem;
+  }
+
+.popular .box-container{
+display: flex;
+flex-wrap: wrap;
+gap:1.5rem;
+}
+
+.popular .box-container .box{
+padding:2rem;
+background:rgb(243, 157, 157);
+box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+border:.1rem solid rgba(0,0,0,.3);
+border-radius: .5rem;
+text-align: center;
+flex:1 1 30rem;
+position: relative;
+}
+
+.popular .box-container .box img{
+height:25rem;
+object-fit: cover;
+width:100%;
+border-radius: .5rem;
+}
+
+.popular .box-container .box .price{
+position: absolute;
+top:3rem; left:3rem;
+/* background:var(--red); */
+color:#fff;
+font-size: 2rem;
+padding:.5rem 1rem;
+border-radius: .5rem;
+}
+.popular .box-container .box h3{
+color:#333;
+font-size: 2.5rem;
+padding-top: 1rem;
+}
+
+.popular .box-container .box .stars i{
+color:gold;
+font-size: 1.7rem;
+padding:1rem .1rem;
+}
+.steps{
+display: flex;
+flex-wrap: wrap;
+gap:1.5rem;
+padding:1rem;
+}
+
+.steps .box{
+flex:1 1 25rem;
+padding:1rem;
+text-align: center;
+}
+
+.steps .box img{
+border-radius: 50%;
+border:1rem solid #fff;
+box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+.steps .box h3{
+font-size: 3rem;
+color:#333;
+padding:1rem;
+}
+
+/* gallery */
+.gallery .heading{
+    color: red;
+}
+.galley{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    min-height: 100vh;
+    align-items: center;
+    background:url(../images/home-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+/* Slideshow container */
+.slideshow-container {
+    max-width: 90%;
+    position: relative;
+    margin: auto;
+    border: 0em;
+    border-radius: 5px;
+  }
+.slideshow-container .img{
+    border-image: 0em;
+    border-radius: 5px;
+}  
+/* Hide the images by default */
+.mySlides {
+display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+margin-top: -22px;
+padding: 16px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+color: #f2f2f2;
+font-size: 15px;
+padding: 8px 12px;
+position: absolute;
+bottom: 8px;
+width: 100%;
+text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+-webkit-animation-name: fade;
+-webkit-animation-duration: 1.5s;
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}
+
+@keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}
+
+.booking .row{
+padding:2rem;
+box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+background:#fff;
+display: flex;
+flex-wrap: wrap;
+gap:1.5rem;
+border-radius: .5rem;
+}
+
+.booking .row .image{
+flex:1 1 30rem;
+}
+
+.booking .row .image img{
+height: 100%;
+width:100%;
+object-fit: cover;
+border-radius: .5rem;
+}
+
+.booking .row form{
+flex:1 1 50rem;
+padding:1rem;
+}
+
+.booking .row form .inputbox{
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+
+.booking .row form .inputbox input, .booking .row form text{
+padding:1rem;
+margin:1rem 0;
+font-size: 1.7rem;
+color:#333;
+text-transform: none;
+border:.1rem solid rgba(0,0,0,.3);
+border-radius: .5rem;
+width:49%;
+}
+
+.booking .row form text{
+width:100%;
+resize: none;
+height:15rem;
+}
+
+.booking .row form .btn{
+background:none;
+}
+
+.booking .row form .btn:hover{
+background: red;
+}

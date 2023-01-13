@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Arcturus mall</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/1e241e8528.js" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;483;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body class="body">
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/arcturus_icon.jpg" alt="Arcturus mall logo" width="120px">
+                </div>
+                <nav>
+                    <ul id="menuitems">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="restaurant.html">Restaurant</a></li>
+                        <li><a href="movie_playing.html">Movies</a></li>
+                        <li><a href="clothing_index.html">Clothings</a></li>
+                        <!-- <li><a href="">Accessories</a></li> -->
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <img src="images/cart.png" width="30px" height="30px">
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+
+            <div class="row">
+                <div class="col2">
+                    <h2>Welcome to <b>Arcturus mall</b><br>One Stop Shop</h2>
+                    <p>More than 300 stores of the most covetable luxury brands at
+                        Fashion and Food Avenue ready for you to discover.</p>
+                    <a href="" class="btn">Explore Now &#8594</a>    
+                </div>
+                <div class="col2">
+                    <img src="images/starting_image1.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- featured categories -->
+    <div class="categories">
+        <div class="small-container">
+            <div class="row">
+                <div class="col3">
+                    <a href="restaurant.html">
+
+                        <img src="images/category1_dine.jpg" id="dine" alt="Dine">
+                        <div class="Dine">Dine</div>
+                    </a>
+                    <!-- <br> -->
+                </div>
+                <div class="col3">
+                    <a href="movie_playing.html">
+
+                        <img src="images/category2_movies.jpg" id="movies" alt="Movies">
+                        <div class="Movies">Movies</div>
+                    </a>
+                    <!-- <br> -->
+                </div>
+                <div class="col3">
+                    <a href="clothing_index.html">
+
+                        <img src="images/clothings_category-3.jpg" id="clothings" alt="Clothings">
+                        <div class="Clothings">Clothings</div>
+                    </a>
+                    <!-- <br> -->
+                </div>
+                <div class="col3">
+                    <!-- <img src="images/category4_accesories.jpg" alt="Accesories"> -->
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- featured products -->
+    <div class="small-container">
+        <h2 class="title">What's new at Arcturus</h2>
+        <div class="row">
+            <div class="col4">
+                <img src="images/what's_new.jpg" alt="what's new" onclick="forest_essential(this.value)">
+                <h4>Forest esstentials now @ Arcturus</h4>
+                <!-- <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div> -->
+                <p>Starting from $49</p>
+            </div>
+        </div>
+    </div>
+    <!-- offer -->
+    <div class="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col2">
+                    <img class ="offer-img"src="images/exclusive.png" alt="exclusive watch">
+                </div>
+                <div class="col2">
+                    <p>Exclusively Available on Arcturus mall</p>
+                    <h1>Smart Band 5</h1>
+                    <small>A new product from xiaomi which takes user experience to a whole new level.</small>
+                    <a href="" class="btn" onclick="exclusive_watch(this.value)">Buy Now &#8594</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- testimonial  -->
+    <div class="testimonial">
+        <div class="small-container1">
+            <div class="row">
+                <div class="col">
+                    <p>ArcturusMalls.in</p>
+                    <i class="fa fa-quote-left"></i>
+                    <p>This is the best mall I have ever visited. The  services are so good along with the infratructure that attracts anyone to it's authenticity.</p>
+                    <i class="fa fa-quote-right"></i>
+                    <h3>Srujan</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- brands -->
+    <div class="brands">
+        <div class="small-container">
+            <div class="row">
+                <div class="col5" id="logo_slider">
+                    <img src="images/logo-godrej.png" >
+                    <!-- <img src="images/logo_Calvin_klein_.png" > -->
+                </div>
+                <div class="col5">
+                    <img src="images/logo-oppo.png" >
+                    <!-- <img src="images/logo_Park-Avenue.png" > -->
+                </div>
+                <div class="col5">
+                    <img src="images/logo-coca-cola.png" >
+                    <!-- <img src="images/logo_under_armour.jpg" > -->
+                </div>
+                <div class="col5">
+                    <img src="images/logo-paypal.png" >
+                    <!-- <img src="images/logo_Starbucks.png" > -->
+                </div>
+                <div class="col5">
+                    <img src="images/logo-philips.png" >
+                    <!-- <img src="images/logo_tommy_children.png" > -->
+                </div>
+                <div class="col5">
+                    <!-- <img src="images/logo-philips.png" > -->
+                    <img src="images/logo_tommy_children.png" >
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col1">
+                    <img class="arcturus_logo1" src="images/logo.png" >
+                    <p>Our purpose is to sustainably make entertainment accessible to 
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        he many.</p>
+                </div>
+                
+                <div class="footer-col2">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col3">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Twitter</li>
+                        <li>You Tube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2021-srujan</p>
+        </div>
+    </div>
+
+    <script>
+        var menuitems = document.getElementById("menuitems");
+
+        menuitems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(menuitems.style.maxHeight == "0px")
+            {
+                menuitems.style.maxHeight = "200px"
+            }
+            else
+            {
+                menuitems.style.maxHeight = "0px";
+            }
+        }
+
+        function forest_essential(value)
+        {
+            alert("This is a new sector to be open shortly. Pls visit the mall for exiting offers.")
+        }
+
+        function exclusive_watch(value)
+        {
+            alert("Please visit mall, Level 2 - Reliance Digital");
+        }
+
+        
+    </script>
+</body>
+</html>
