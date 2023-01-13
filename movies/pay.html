@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,
+               initial-scale=1.0"/>
+    <link rel="stylesheet" href="movie_style1.css" 
+          class="css" />
+  </head>
+  <body>
+  
+  <form method="GET" target="_blank" type="submit" onSubmit="window.open('movie_index.html','_self')" class="card-details">
+        <p>Pay using Credit or Debit card</p>
+  
+        <div class="card-number">
+          <label> Card Number </label>
+          <input
+            type="text"
+            class="card-number-field"
+	    pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}"
+            placeholder="####-####-####-####" title="Please enter correct card number"/>
+        </div>
+        <br />
+        <div class="date-number">
+          <label> Expiry Date </label>
+          <input type="date" class="date-number-field" 
+                 placeholder="DD-MM-YY" />
+        </div>
+  
+        <div class="cvv-number">
+          <label> CVV number </label>
+          <input type="text" class="cvv-number-field" pattern="[0-9]{3}"
+                 placeholder="---" title="Please enter correct cvv"/>
+        </div>
+        <div class="nameholder-number">
+          <label> Card Holder name </label>
+          <input
+            type="text"
+            class="card-name-field"
+            placeholder="Enter your Name"/>
+        </div>
+        <input type="submit" class="submit-now-btn"></form>
+  </body>
+</html>
